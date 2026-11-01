@@ -1,0 +1,48 @@
+{
+    "name": "blockauth/blockauth",
+    "description": "Modular Authentication, Profile Management and Dynamic RBAC Starter Kit for Laravel and Inertia React.",
+    "keywords": ["laravel", "auth", "authentication", "rbac", "inertia", "react", "starter-kit"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Akmal Raditya Wijaya",
+            "email": "akmal.raditya.wijaya@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0",
+        "illuminate/console": "^11.0|^12.0",
+        "illuminate/filesystem": "^11.0|^12.0",
+        "inertiajs/inertia-laravel": "^2.0",
+        "intervention/image-laravel": "^1.0",
+        "laravel/socialite": "^5.0",
+        "spatie/laravel-permission": "^6.0",
+        "tightenco/ziggy": "^2.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BlockAuth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BlockAuth\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BlockAuth\\BlockAuthServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
+
